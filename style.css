@@ -137,55 +137,59 @@ div.head{
     color: #29a19c;
     text-shadow: 0px 0px 30px white;
   }
-  div.footer{
-    color: white;
-    background-color: black;
-    box-shadow: 0px 0px 8px 1px white;
+}
+div.footer{
+  color: white;
+  background-color: black;
+  box-shadow: 0px 0px 8px 1px white;
+}
+a.iconlink:visited{
+  color: white;
+}
+a.iconlink:active{
+  color: white;
+}
+a.iconlink:link{
+  color: white;
+  text-decoration: none;
+}
+div.contactdrop{
+  display: none;
+  color: #29a19c;
+  text-shadow: 0px 0px 10px white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  padding-top: 5px;
+}
+div.icon:hover .contactdrop{
+  display: block;
+}
+@media only screen and (max-width:600px) {
+  div.column{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
   }
-  a.iconlink:visited{
-    color: white;
+  div.imagegrid{
+    display: grid;
+    grid-template-columns: auto;
   }
-  a.iconlink:active{
-    color: white;
+  div.description{
+    line-height: 150%;
+    word-spacing: 13px;
   }
-  a.iconlink:link{
-    color: white;
-    text-decoration: none;
+  div.myimage img{
+    height: 200px;
+    width: 300px;
+  }
+  div.gridelement img{
+    height: 250px;
+  }
+  div.heading{
+    font-size: 45px;
   }
   div.contactdrop{
-    display: none;
-    color: #29a19c;
-    text-shadow: 0px 0px 10px white;
-    font-family: 'Comfortaa', cursive;
-    font-size: 20px;
-    padding-top: 5px;
+    font-size: 10px;
+    text-shadow: 0px 0px 7px white;
   }
-  div.icon:hover .contactdrop{
-    display: block;
-  }
-  @media only screen and (max-width:600px) {
-    div.column{
-      width: 100%;
-      float: left;
-      padding: 10px 0;
-    }
-    div.imagegrid{
-      display: grid;
-      grid-template-columns: auto;
-    }
-    div.description{
-      line-height: 150%;
-      word-spacing: 13px;
-    }
-    div.myimage img{
-      height: 200px;
-      width: 300px;
-    }
-    div.heading{
-      font-size: 45px;
-    }
-    div.contactdrop{
-      font-size: 10px;
-      text-shadow: 0px 0px 7px white;
-    }
-  }
+}
